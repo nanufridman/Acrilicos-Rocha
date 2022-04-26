@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dosis:wght@200&family=Fredoka+One&family=Hubballi&family=Indie+Flower&family=Inspiration&family=Pacifico&family=Palette+Mosaic&family=Shadows+Into+Light&display=swap");
+
+:root {
+  --fontone: "Comfortaa", cursive;
+  --red: #bb2d3b;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontone);
+}
+body {
+  width: 100%;
+  background: #f7f7f7;
+}
+/* NAV */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+ul {
+  position: relative;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+  }
+}
+ul li {
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  font-size: 1.8em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(87, 79, 201, 0.5);
+}
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}
+.logo {
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.jumbotron {
+  height: 18em;
+  background-color: #050304;
+  background-image: url("../Multimedia/Acrilico2.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 10px;
+}
+
+.empresa {
+  margin-top: 20px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.intro {
+  width: 100%;
+  height: 15em;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmV4RwsgRHjDuUrZv89-vLoru9f_ShjXMy8w&usqp=CAU");
+  background-attachment: fixed;
+  background-size: cover;
+  /* -webkit-filter: grayscale(1); 
+    filter: rgb(0, 0, 0); 
+    filter: grayscale(1);  */
+  background-attachment: fixed;
+}
+
+h4,
+.redes {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  color: var(--red);
+  font-weight: bolder;
+}
+.redes a {
+  color: var(--red);
+  font-size: 30px;
+}
+
+#Servicios {
+  margin-top: 30px;
+}
+.container1 {
+  padding: 30px;
+}
+.img1 {
+  background-image: url("../Multimedia/gordo.jpg");
+}
+.img2 {
+  background-image: url("../Multimedia/portapc.jpg");
+}
+.img3 {
+  background-image: url("../Multimedia/rollarg.jpeg");
+}
+.container-footer {
+  text-align: center;
+}
+/* GALERIA */
+
+.container2 {
+  padding: 30px;
+}
+.caja1 {
+  background-image: url("../Multimedia/rollarg.jpeg");
+}
+.carousel-inner {
+  height: 25em;
+}
+
+/* CONTACTO */
+
+form {
+  height: 30em;
+  padding: 2% 25%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV5pHT49P5WjjmrfoDHz1VxkCnY2t0xLPVzHUkXuBYs5P9xoJKVa5acSpm2R-ZQekK4D0&usqp=CAU");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.col {
+  padding: 15px;
+}
+.consulta{
+color: var(--red);
+font-weight: bold;
+}
+.enviar{
+  margin-top: 15px;
+}
